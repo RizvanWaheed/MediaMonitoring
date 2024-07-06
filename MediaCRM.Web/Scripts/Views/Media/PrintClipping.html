@@ -1,0 +1,210 @@
+﻿<style>
+    .truncate-item {
+        max-width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+
+    .cropArea {
+        background: #E4E4E4;
+        overflow: hidden;
+    }
+</style>
+<div class="wrapper">
+    <div ui-view="Header"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height:650px !important;" ng-app="CRMApp" id="PrintClippingController" ng-controller="PrintClippingController">
+        <!-- header starts here -->
+        <div class="container-fluid page_name">
+            <div class="col-sm-10"><i class="fa fa-cut"></i> Print Clipping</div>
+        </div>
+        <!-- header ends here -->
+        <div class="container-fluid padding_set">
+            <div class="col-md-12">
+                <div class="box box-default">
+                    <div class="box-body">
+                        <div class="box-body no-padding">
+                            <div class="col-md-12">
+                                <div class="col-md-3 col-xs-12 zro_left2" title="Select Newspaper">
+                                    <div id="multisel" style="">
+                                        <div class='sel_menu' ng-dropdown-multiselect="" events="NewspaperDDLEvents"
+                                             options="NewspaperList" selected-model="selectedNewPaper"
+                                             translation-texts="NewspaperTextDDL" extra-settings="singleSelectSettings"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-12 zro_left2" title="Select City">
+                                    <div id="multisel" style="">
+                                        <div class='sel_menu' ng-dropdown-multiselect="" events="CityDDLEvents"
+                                             options="CitiesList" selected-model="selectedCity"
+                                             translation-texts="NewspaperCityTextDDL" extra-settings="singleSelectSettings"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-12 zro_left2" title="Select PageNumber">
+                                    <div id="multisel" style="">
+                                        <div class='sel_menu' ng-dropdown-multiselect=""
+                                             options="NewspaperPageList" selected-model="selectedPageNumber"
+                                             translation-texts="NewspaperPageNumberTextDDL" extra-settings="singleSelectSettings"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-12 zro_left2">
+                                    <div id="multisel">
+                                        <input type="text" id="mediadatepicker"
+                                               class="form-control sel_menu date-picker" style="height: 30px;"
+                                               placeholder="Newspaper Date" ng-model="NewspaperDate">
+                                    </div>
+                                </div>
+                                <div class="col-md-1" style="margin-left:5px">
+                                    <button type="button" style="margin-left: 5px;" ng-click="GetNewspaper()" class="btn btn-primary button_round3  btn_height3a">
+                                        <i class="fa fa-check"></i> Fetch Newspaper
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+            </div>
+          
+            <div class="col-md-12">
+                <div class="box box-default">
+                    <div class="box-body no-padding">
+                        <div class="col-md-12" style="margin-left:5px">
+
+                            <div class="col-md-3 col-xs-12 zro_left2" title="Select News Type">
+                                <div id="multisel" style="">
+                                    <br />
+                                    <div class='sel_menu' ng-dropdown-multiselect="" options="NewsTypeList" events="newsEventListeners" selected-model="newsType"
+                                         translation-texts="example5customTextsNewsType" extra-settings="singleSelectSettings"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-xs-12 zro_left2 " title="Select Relevance">
+                                <div id="multisel" style="">
+                                    <br />
+                                    <div class='sel_menu' ng-dropdown-multiselect="" options="NewsRelatedToList" selected-model="newsRelatedTo"
+                                         translation-texts="example5customTextsNewsRelatedTo" extra-settings="singleSelectSettings"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-xs-12 zro_left2" title="Select Categories">
+                                <div id="multisel">
+                                    <br />
+                                    <div class='sel_menu' ng-dropdown-multiselect="" options="CategoriesList" selected-model="CategoryModel"
+                                         translation-texts="example5customTextsCategories"
+                                         extra-settings="multiSelectSettings"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-12 zro_left2" title="Select Sentiment">
+                                <div id="multisel">
+                                    <br />
+                                    <div class='sel_menu' ng-dropdown-multiselect="" options="SentimentsList" selected-model="sentimentSelect"
+                                         translation-texts="example5customTextsSentiment" extra-settings="singleSelectSettings"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-xs-12 zro_left2">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    Cols No.<br>
+                                    <input type="number" ng-blur="CalculatePRValue()" class="form-control sel_menu" style="height: 30px;"
+                                           placeholder="Enter Col No." ng-model="ColumnNumber">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-xs-12 zro_left2">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    Column Height<br>
+                                    <input type="number" ng-blur="CalculatePRValue()" class="form-control sel_menu" style="height: 30px;"
+                                           placeholder="Enter Col. Height" ng-model="ColumnHeight">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-xs-12 zro_left2">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    Advertising Rate<br>
+                                    <input type="text" ng-blur="CalculatePRValue()" class="form-control sel_menu" style="height: 30px;"
+                                           placeholder="Enter Rate" ng-model="AdvertisingRate">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 col-xs-12 zro_left2">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    Multiplier<br>
+                                    <input type="number" class="form-control sel_menu" ng-disabled="true" ng-model="Multiplier"
+                                           style="height: 30px;" placeholder="" value="3" ng-show="true">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 zro_left2 col-xs-12">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    PR Value<br>
+                                    <input type="text" class="form-control sel_menu" ng-model="PrValue" style="height: 30px;" placeholder="Enter PR Value">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-12 zro_left2" title="Select Clipping Upload File">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    <div class="zro_left">
+                                        Clipping Upload<br />
+                                    </div>
+                                    <img ng-if="base64String != ''" src="{{base64String}}" alt="{{fileName}}"
+                                         width="50" height="50" style="display:inline;margin:0px 5px;border:2px solid black;" />
+                                    <label class="custom-upload2">
+                                        <input type="file" name="upload_file" onchange="angular.element(this).scope().SetFileName()"
+                                               ng-model="ClippingUpload" />Browse
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 zro_left2 col-xs-12">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                    Print Heading <br>
+                                    <input type="text" class="form-control sel_menu"
+                                           ng-model="PrintHeading" style="height: 30px;"
+                                           placeholder="Enter Print Heading / Brief">
+                                </div>
+                            </div>
+                            <div class="col-md-6 zro_left2 col-xs-12">
+                                <div id="multisel" style="margin-bottom:10px !important;">
+                                     Brief Script<br>
+                                    <input type="text" class="form-control sel_menu"
+                                           ng-model="PrintScript" style="height: 30px;"
+                                           placeholder="Enter Print Bried Script">
+                                </div>
+                            </div>
+                            <div class="col-md-2 zro_left2 col-xs-12">
+                                <div style="margin-bottom:10px !important;">
+                                    <br>
+                                    <button type="button" style="margin-left: 5px;" ng-click="CropNewspaper()" class="btn btn-primary button_round3  btn_height3a">
+                                        <i class="fa fa-upload"></i> Upload Selected
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-12" style="padding: 0px;">
+                            <div class="col-md-12 cropArea">
+                                <ui-cropper result-image-size="'max'" area-min-size="{w:15,h:15}"
+                                            area-type="rectangle" image="myImage"
+                                            chargement="'Loading ... '" result-image="requestedPaper"
+                                            canvas-scalemode="true"></ui-cropper>
+                            </div>
+                            <div class="col-md-12">
+                                <img style="width:90%;" ng-src="{{requestedPaper}}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</div>
+<!-- Main content -->
+<div ui-view="Footer"></div>
+<script>
+    $(document).ready(function () {
+        currentDate = new Date();
+        $('#mediadatepicker').daterangepicker({ minDate: moment().subtract(5, "years"), maxDate: moment(), singleDatePicker: true, timePicker: false, locale: { format: 'DD/MM/YYYY' }, "setDate": currentDate });
+    });
+</script>

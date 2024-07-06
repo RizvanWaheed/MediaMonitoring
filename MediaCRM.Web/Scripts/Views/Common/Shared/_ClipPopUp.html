@@ -1,0 +1,25 @@
+﻿<div class="modal-content" style="height:500px;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()">&times;</button>
+        <h4 class="modal-title"><i class="fa fa-mail-reply"></i> Attached Clip of : {{heading}}</h4>
+    </div>
+    <div class="modal-body" style="height:400px">
+        <div>
+            <div class="col-sm-12">
+                <img ng-if="media_type == 'Image'"  ng-src="{{url}}" 
+                     style="border-radius: 0px; object-fit:fill; max-width:100%; max-height:400px;" />                
+                <div ng-if="media_type == 'Video'" align="center" class="embed-responsive embed-responsive-16by9 video_set">
+                    <video preload="none" loop class="embed-responsive-item" controls>
+                        <source ng-src="{{url | trustedResource}}" type="video/mp4">
+                        <source ng-src="{{url | trustedResource}}" type="video/webm">
+                        <source ng-src="{{url | trustedResource}}" type="video/ogg">
+                        <source ng-src="{{url | trustedResource}}" type="video/m4v">
+                        <source ng-src="{{url | trustedResource}}" type="video/mpeg">
+                        <source ng-src="{{url | trustedResource}}" type="video/quicktime">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

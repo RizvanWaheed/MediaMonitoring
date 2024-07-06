@@ -1,0 +1,67 @@
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\CRM.Entities.dll.config
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\CRM.Entities.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\CRM.Entities.pdb
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\EntityFramework.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\EntityFramework.xml
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\bin\Debug\Newtonsoft.Json.xml
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\obj\Debug\CRM.Entities.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\obj\Debug\CRM.Entities.pdb
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\obj\Debug\CRM.Entities.csprojResolveAssemblyReference.cache
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\obj\Debug\CRM.Entities.csproj.CoreCompileInputs.cache
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Entities\obj\Debug\CRM.Entities.csproj.CopyComplete
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\CRM.Entities.dll.config
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\CRM.Entities.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\CRM.Entities.pdb
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\EntityFramework.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\EntityFramework.xml
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\bin\Debug\Newtonsoft.Json.xml
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\obj\Debug\CRM.Entities.csproj.CoreCompileInputs.cache
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\obj\Debug\CRM.Entities.csproj.CopyComplete
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\obj\Debug\CRM.Entities.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Entities\obj\Debug\CRM.Entities.pdb
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.dll.config
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.pdb
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.xml
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\Newtonsoft.Json.xml
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csproj.CoreCompileInputs.cache
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csproj.CopyComplete
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.pdb
+E:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csprojResolveAssemblyReference.cache
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.dll.config
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.pdb
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.xml
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csprojAssemblyReference.cache
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csproj.CoreCompileInputs.cache
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csproj.CopyComplete
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.pdb
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.dll.config
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\CRM.Entities.pdb
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.xml
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.csprojResolveAssemblyReference.cache
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Entities\obj\Debug\CRM.Entities.pdb

@@ -1,0 +1,73 @@
+﻿<style>
+    .truncate-item {
+        max-width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+
+    .cropArea {
+        background: #E4E4E4;
+        overflow: hidden;
+    }
+</style>
+<div class="wrapper">
+    <div ui-view="Header"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height:650px !important;" ng-app="CRMApp" id="ePaperSettingController" ng-controller="ePaperSettingController">
+        <!-- header starts here -->
+        <div class="container-fluid page_name">
+            <div class="col-sm-10"><i class="fa fa-cut"></i> ePaper Setup</div>
+        </div>
+        <!-- header ends here -->
+        <div class="container-fluid padding_set">
+            <div class="col-md-12">
+                <div class="box box-default">
+                    <div class="box-body">
+                        <div class="box-body no-padding">
+                            <div class="col-md-12">
+                                <div class="col-md-3 zro_left">
+                                    <div class="demo" style="">
+                                        <input id="NewspaperName" class="form-control" style="font-size:12px; height:30px;" type="text" placeholder="Enter Newspaper Name" title="Enter Newspaper Name"
+                                               ng-model="NewspaperName" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 zro_left">
+                                    <div class="demo" style="">
+                                        <input id="NewpaperDateFormat" class="form-control" style="font-size:12px; height:30px;" type="text" placeholder="Enter Date Format(YYYYMMDD)"
+                                               title="Date Format" ng-model="NewpaperDateFormat" maxlength="10" />
+                                    </div>
+                                </div>
+                                <div class="col-md-1" style="margin-left:5px">
+                                    <button type="button" style="margin-left: 5px;" ng-click="ValidateSetting()" class="btn btn-primary button_round3  btn_height3a">
+                                        <i class="fa fa-check"></i> {{buttonText}}
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" style="margin-top:10px;">
+                                <div id="grplists">
+                                    <div class="col-md-12 table-bordered pad_sett {{GetStyle($index)}}" ng-repeat="ePaper in ConfiguredEpapers">
+                                        <div class="col-md-12 zro">
+                                            <div class="col-md-6 zro_left"><strong>NewPaper Name:</strong><br>{{ePaper.NewPaperName}}</div>
+                                            <div class="col-md-4 zro_left"><strong>NewPaper Date Format:</strong><br>{{ePaper.DateFormat}}</div>
+                                            <div class="col-md-2">
+                                                <strong>Actions:</strong><br>
+                                                <a href="javascript:" title="View Urls" ng-click="LoadNewspaperUrls(ePaper.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-eye"></i></a>
+                                                <a href="javascript:" title="Edit" ng-click="editPaperSetting(ePaper.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-pencil"></i></a>
+                                                <a href="javascript:" title="Delete" ng-click="deletePaperSetting(ePaper.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div>
+    </div>
+</div>
+<!-- Main content -->
+<div ui-view="Footer"></div>

@@ -1,0 +1,117 @@
+﻿<style>
+    .truncate-item {
+        max-width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+
+    .cropArea {
+        background: #E4E4E4;
+        overflow: hidden;
+    }
+</style>
+<div class="wrapper">
+    <div ui-view="Header"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height:650px !important;" ng-app="CRMApp" id="ePaperUrlsController" ng-controller="ePaperUrlsController">
+        <!-- header starts here -->
+        <div class="container-fluid page_name">
+            <div class="col-sm-10"><i class="fa fa-file"></i> Newspaper Urls of '<b>{{NewspaperName}}</b>'</div>
+        </div>
+        <!-- header ends here -->
+        <div class="container-fluid padding_set">
+            <div class="col-md-12">
+                <div class="box box-default">
+                    <div class="box-body">
+                        <div class="box-body no-padding">
+                            <div class="col-md-12">
+                                Note: To save Full Url, Please change date value from Url with {dateParam} like date?31082019&city.. with date?{dateParam}&city..
+                            </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-3 zro_left">
+                                        <div class="demo" style="">
+                                            
+                                            <input id="UrlTemplate" class="form-control" style="font-size:12px; height:30px;" type="text"
+                                                   placeholder="Enter Full Url" title="Url Template : {{UrlTemplate}}" ng-model="UrlTemplate" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 zro_left">
+                                        <div class="demo" style="">
+                                            <input id="PageNumber" class="form-control" style="font-size:12px; height:30px;" type="text" placeholder="Page Number of Url"
+                                                   title="Url Page Number" ng-model="PageNumber" maxlength="10" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 zro_left">
+                                        <div class="demo" style="">
+                                            <input id="DateFormat" class="form-control" style="font-size:12px; height:30px;" type="text" placeholder="{DateFormat} DDMMYYYY"
+                                                   title="Format of Date DDMMYYYY" ng-model="DateFormat" maxlength="10" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-xs-12 zro_left2" title="Select City">
+                                        <div id="multisel" style="">
+                                            <div class='sel_menu' ng-dropdown-multiselect=""
+                                                 options="CitiesList" selected-model="selectedCity"
+                                                 translation-texts="example5customTextsCity" extra-settings="singleSelectSettings"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1" style="margin-left:5px">
+                                        <button type="button" style="margin-left: 5px;" ng-click="ValidateUrl()" class="btn btn-primary button_round3  btn_height3a">
+                                            <i class="fa fa-check"></i> {{buttonText}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div><!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+            <div class="col-md-12">
+                <div class="box box-default">
+                    <div class="box-body">
+                        <div class="box-body no-padding">
+                            <div class="col-md-12">
+                                <div class="col-md-3 col-xs-12 zro_left2" title="Filter City">
+                                    <div id="multisel" style="">
+                                        <div class='sel_menu' ng-dropdown-multiselect=""
+                                             options="CitiesFilterList" selected-model="selectedCityFilter"
+                                             translation-texts="example5customTextsFilterCity" extra-settings="cityFilterSettings">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="margin-left:5px">
+                                    <button type="button" style="margin-left: 5px;" ng-click="FilterUrl(false)" class="btn btn-primary button_round3  btn_height3a">
+                                        <i class="fa fa-filter"></i> Paper Urls
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" style="margin-top:10px;">
+                                <div id="grplists">
+                                    <div class="col-md-12 table-bordered pad_sett {{GetStyle($index)}}" ng-repeat="ePaper in NewspaperUrls">
+                                        <div class="col-md-12 zro">
+                                            <div class="col-md-4 zro_left"><strong>Page Url:</strong><br>{{ePaper.UrlTemplate}}</div>
+                                            <div class="col-md-2 zro_left"><strong>Page Number:</strong><br>{{ePaper.PageNumber}}</div>
+                                            <div class="col-md-2 zro_left"><strong>City:</strong><br>{{ePaper.CityName}}</div>
+                                            <div class="col-md-2 zro_left"><strong>Date Format:</strong><br>{{ePaper.DateFormat}}</div>
+                                            <div class="col-md-2">
+                                                <strong>Actions:</strong><br>
+                                                <a href="javascript:" title="Edit" ng-click="editPaperUrl(ePaper.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-pencil"></i></a>
+                                                <a href="javascript:" title="Delete" ng-click="deletePaperUrl(ePaper.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</div>
+<!-- Main content -->
+<div ui-view="Footer"></div>

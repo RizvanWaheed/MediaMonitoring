@@ -1,0 +1,81 @@
+﻿<style>
+    .truncate-item {
+        max-width: 145px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+</style>
+<div class="wrapper">
+    <div ui-view="Header"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height:650px !important;" ng-app="CRMApp" id="RelevanceController" ng-controller="RelevanceController">
+        <!-- header starts here -->
+        <div class="container-fluid page_name">
+            <div class="col-sm-10"><i class="fa fa-flag"></i> Relevance Types</div>
+        </div>
+        <!-- header ends here -->
+        <div class="container-fluid padding_set">
+            <div class="col-md-12">
+                <div class="box box-default">
+                    <div class="box-header with-border">
+                        <div class="col-sm-12 zro"><i class="fa fa-bullhorn"></i>  Relevance Type</div>
+                    </div>
+
+                    <div class="box-body">
+                        <div class="box-body no-padding">
+                            <span style="color:red;margin-left: 15px;" ng-show="errorMsg.length > 0">{{errorMsg}}</span>
+                            <div class="col-md-12">
+                                   <div class="col-md-3 zro_left" title="Select News Type">
+                                    <div id="multisel" style="margin-bottom:10px !important;">
+                                        Relevance Type<br>
+                                        <input type="text" ng-model="RelevanceName" class="form-control " placeholder="Enter Relevance Type">
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-primary button_round  btn_height3" ng-click="AddorUpdateRelevanceType()" 
+                                            style="float:left !important;margin-top: 18px;">Save Relevance</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-12" style="margin-top:10px;">
+                            <div id="grplists">
+                                <div class="col-md-12 table-bordered pad_sett {{GetStyle($index)}}" ng-repeat="r in RelevanceList">
+                                    <div class="col-md-12 zro">
+                                        <div class="col-md-10 zro_left"><strong>Relevance Type:</strong><br>{{r.Name}}</div>
+                                        <div class="col-md-2"><strong>Actions:</strong><br>  
+                                            <a href="javascript:" title="Edit" ng-click="editChannel(r.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-pencil"></i></a> 
+                                            <a href="javascript:" title="Delete" ng-click="deleteNewsType(r.Id)" style="float:left; margin:3px 5px 0 0;"><i class="fa fa-trash"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div>
+
+
+    </div>
+</div>
+<!-- Main content -->
+<div ui-view="Footer"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#grplists').slimscroll({
+            height: '600px',
+            disableFadeOut: true
+        }).bind('slimscroll', function (e, pos) {
+            if (pos == "bottom") {
+                angular.element('#RelevanceController').scope().loadMoreChannels();
+                angular.element('#RelevanceController').scope().$apply();
+            }
+        });
+    });
+</script>

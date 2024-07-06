@@ -1,0 +1,45 @@
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\bin\Debug\CRM.Common.dll.config
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\bin\Debug\CRM.Common.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\bin\Debug\CRM.Common.pdb
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\obj\Debug\CRM.Common.dll
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\obj\Debug\CRM.Common.pdb
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\obj\Debug\CRM.Common.csprojResolveAssemblyReference.cache
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\obj\Debug\CRM.Common.csproj.CoreCompileInputs.cache
+E:\TFS\TRGTech\SocialMediaApplications\KE-CRM-Media\CRM.Common\obj\Debug\CRM.Common.csproj.CopyComplete
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\bin\Debug\CRM.Common.dll.config
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\bin\Debug\CRM.Common.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\bin\Debug\CRM.Common.pdb
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\bin\Debug\NLog.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\bin\Debug\NLog.xml
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\obj\Debug\CRM.Common.csproj.CoreCompileInputs.cache
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\obj\Debug\CRM.Common.csproj.CopyComplete
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\obj\Debug\CRM.Common.dll
+E:\TFSVW\CRM-Media\sourcecode\CRM.Common\obj\Debug\CRM.Common.pdb
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.dll.config
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.pdb
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\NLog.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\NLog.xml
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csproj.CoreCompileInputs.cache
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csproj.CopyComplete
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.dll
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.pdb
+E:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csprojResolveAssemblyReference.cache
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.dll.config
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.pdb
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\NLog.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\bin\Debug\NLog.xml
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csprojAssemblyReference.cache
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csproj.CoreCompileInputs.cache
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csproj.CopyComplete
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.dll
+D:\TFS_PSCA\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.pdb
+D:\Projects DotNet\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.dll.config
+D:\Projects DotNet\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Common\bin\Debug\CRM.Common.pdb
+D:\Projects DotNet\MediaMonitoring\CRM.Common\bin\Debug\NLog.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Common\bin\Debug\NLog.xml
+D:\Projects DotNet\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.csprojResolveAssemblyReference.cache
+D:\Projects DotNet\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.dll
+D:\Projects DotNet\MediaMonitoring\CRM.Common\obj\Debug\CRM.Common.pdb
